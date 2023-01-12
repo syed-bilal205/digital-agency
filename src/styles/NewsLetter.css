@@ -12,6 +12,7 @@
 }
 .newsLetterChildFirst h2{
     font-size: 3rem;
+    color: white;
 }
 .newsLetterChildSec{
     display: flex;
