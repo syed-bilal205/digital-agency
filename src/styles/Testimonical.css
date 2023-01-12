@@ -1,6 +1,12 @@
+.testimonial{
+    padding: 3rem 0;
+}
 .slider__content-top{
     text-align: center;
-    margin-bottom: 50px;
+    padding: 2rem 0;
+}
+.slider__content-top h2{
+    font-size: 4rem;
 }
 .slider__wrapper{
     width: 70%;
@@ -13,12 +19,14 @@
     text-align: center;
     cursor: pointer;
 }
+.slider__item p{
+    padding: 1rem 0;
+}
 .customer__details{
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 1rem;
-    margin-top: 40px;
+    gap: 2rem;
 }
 .customer__img{
     width: 50px;
@@ -43,7 +51,7 @@
 }
 @media only screen and (max-width:992px){
     .slider__content-top h2{
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 }
 @media only screen and (max-width:768px){

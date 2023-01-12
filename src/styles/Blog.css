@@ -1,6 +1,12 @@
+.blog{
+    padding: 2rem 0;
+}
 .blog__top-content{
     text-align: center;
-    margin-bottom: 50px;
+    padding: 2rem 0;
+}
+.blog__top-content h2{
+    font-size: 3rem;
 }
 .blog__item{
     width: 30%;
@@ -48,6 +54,9 @@
     }
     .blog__wrapper{
         flex-wrap: wrap;
+    }
+    .blog__top-content h2{
+        font-size: 2rem;
     }
 }
 @media only screen and (max-width:576px){

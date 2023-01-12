@@ -74,23 +74,17 @@ h1,h2{
   font-size: 2rem;
 }
 .container{
-  width: 1140px;
   padding: 0px 15px;
   margin: auto;
 }
-section{
-  padding: 60px 0px;
-}
 .description{
   color: var(--small-text-color);
-  line-height: 30px;
   font-size: 0.9rem;
 }
 .subtitle{
   font-size: 1rem;
   color: var(--primary-color);
   font-weight: 400;
-  margin-bottom: 20px;
 }
 .light-theme .counter{
   background: var(--primary-color);
@@ -113,8 +107,8 @@ section{
     width: 100%;
   }
 }
-@media only screen and (max-width:768px){
+/* @media only screen and (max-width:768px){
   .section{
     padding: 40px 0px;
   }
-}
+} */

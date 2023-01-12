@@ -1,6 +1,12 @@
+#service{
+    padding: 2rem 0;
+}
 .services__top-content{
     text-align: center;
-    margin-bottom: 40px;
+    padding: .5rem 0;
+}
+.services__top-content h2{
+    font-size: 3rem;
 }
 .service__item-wrapper{
     display: flex;
@@ -14,6 +20,8 @@
     padding: 30px 15px;
     text-align: center;
     cursor: pointer;
+    border-radius: 10px;
+    margin: .5rem 0;
 }
 .service__icon{
     width: 60px;
@@ -24,7 +32,6 @@
     margin: auto;
     background: var(--icon-bg);
     border-radius: .5rem;
-    margin-bottom: 30px;
     border: 1px solid var(--primary-color);
 }
 .light-theme .service__icon{
@@ -40,7 +47,7 @@
 .service__title{
     color: var(--primary-color);
     font-size: 1.3rem;
-    margin-bottom: 30px;
+    padding: .5rem 0;
 }
 @media only screen and (max-width:992px){
     .services__top-content{
@@ -48,7 +55,6 @@
     }
     .service__item{
         width: 31%;
-        margin-bottom: 30px;
     }
     .service__item-wrapper{
         flex-wrap: wrap;
@@ -62,6 +68,9 @@
     }
     .service__title{
         font-size: 1.2rem;
+    }
+    .services__top-content h2{
+        font-size: 2rem;
     }
 }
 @media only screen and (max-width:576px){

@@ -1,39 +1,44 @@
 .footer{
-    padding: 60px 0px;
+    padding: 2rem 3rem;
 }
 .footer__wrapper{
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    padding: 1rem 0;
 }
 .footer__logo{
-    width: 40%;
-}
-.footer__quick-links{
-    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 .footer__logo h2{
     color: var(--primary-color);
-    margin-bottom: 60px;
 }
-.small__text{
+.footer__logo .description{
+    font-weight: bold;
     font-size: 1rem;
-    margin-top: 30px;
+}
+.footer__quick-links{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 .quick__links-title{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     color: var(--primary-color);
     font-weight: 400;
-    margin-bottom: 30px;
 }
 .quick__links{
     list-style: none;
 }
-.quick__links-item{
-    margin-bottom: 30px;
-}
 .quick__links-item a{
-    font-size: 0.9rem;
+    font-size: .9rem;
     cursor: pointer;
+    padding: .9rem 0;
+    font-weight: bold;
     font-weight: 300;
 }
 .quick__links-item a:hover{
@@ -41,4 +46,14 @@
 }
 .light-theme .quick__links-item a{
     font-weight: 500;
+}
+@media only screen and (max-width:768px){
+    .footer__wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .footer{
+        padding: 2rem 1rem;
+    }
 }

@@ -25,7 +25,7 @@ const Footer = () => {
             <div className="footer__logo">
               <h2>Digital Agency</h2>
               <p className="description">Grow with us</p>
-              <p className="small__tex description">
+              <p className="small__text description">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Reiciendis, hic.
               </p>
@@ -34,8 +34,8 @@ const Footer = () => {
                 <h3 className="quick__links-title">solution</h3>
                 <ul className="quick__links">
                     {
-                        quickLinks.map((item,index)=>(
-                            <li className="quick__links-item"><a href={item.path}>{item.display}</a></li>
+                        quickLinks.map((item)=>(
+                            <li key={item.display} className="quick__links-item"><a href={item.path}>{item.display}</a></li>
                         ))
                     }
                 </ul>

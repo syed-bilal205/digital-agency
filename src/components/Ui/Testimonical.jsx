@@ -31,7 +31,7 @@ const Testimonical = () => {
 
   return (
     <>
-      <section>
+      <section className="testimonial">
         <div className="container">
             <div className="slider__content-top">
             <h6 className="subtitle">Testimonials</h6>
@@ -47,9 +47,8 @@ const Testimonical = () => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
               veniam, fuga odit saepe nostrum mollitia nesciunt explicabo
               praesentium corrupti repudiandae facere. Rem provident
-              consequuntur libero fugit, exercitationem enim hic tempore minima
-              illo atque voluptates facere suscipit dignissimos unde eaque
-              ipsum.
+              consequuntur libero fugit,
+              </p>
             <div className="customer__details">
                 <div className="customer__img">
                     <img src={item.imgUrl} alt="" />
@@ -59,7 +58,7 @@ const Testimonical = () => {
                     <p className="description">CEO, Workcreation</p>
                 </div>
             </div>
-            </p>
+            
           </div>
         
                 ))

@@ -1,28 +1,36 @@
+.hero__section{
+    padding: 2rem 2rem;
+}
 .hero__wrapper{
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    gap: 1rem;
+}
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 .hero__content, .hero__img{
     width: 50%;
 }
-.hero__content h2{
-    font-size: 3rem;
+.hero__content .heroHeading{
+    font-size: 3.3rem;
 }
 .hero__img img{
     width: 100%;
 }
 .hero__content p{
-    margin-top:40px ;
     font-size: 1.1rem;
 }
 .highlight{
     color: var(--primary-color);
 }
 .hero__btns{
-    margin-top: 40px;
     display: flex;
     align-items: center;
-    column-gap: 2rem;
+    gap: 1rem;
 }
 .primary__btn , .secondary__btn{
     padding: 0.8rem 1.5rem;
@@ -40,21 +48,32 @@
     background: var(--btn-primary-bg);
 }
 @media only screen and (max-width:992px){
-    .hero__content h2{
-        font-size: 2rem;
-        line-height: 50px;
+    .hero__content{
+        justify-content: center;
+        align-items: center;
     }
+    .hero__content .heroHeading{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .hero__content .highlight{
+        text-align: center;
+    }
+    .hero__content p{
+        text-align: center;
+    }
+    
 }
 @media only screen and (max-width:768px){
     .hero__content h2{
-        font-size: 1.5rem;
-        line-height: 45px;
+        font-size: 1.8rem;
     }
     .hero__content p{
         font-size: 0.9rem;
     }
     .primary__btn, .secondary__btn{
         font-size: 0.8rem;
+        padding: .8rem 1rem;
     }
     .hero__content,.hero__img{
         width: 100%;
@@ -66,5 +85,8 @@
     }
     .hero__wrapper{
         flex-direction: column;
+    }
+    .hero__section{
+        padding: 2rem 1rem;
     }
 }

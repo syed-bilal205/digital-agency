@@ -6,7 +6,7 @@
 .nav__wrapper{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .menu{
     display: flex;
@@ -104,8 +104,12 @@
     }
     .mobile__menu{
         font-size: 1rem;
+        z-index: 50;
     }
     .logo h2{
         font-size: 1.3rem;
+    }
+    .menu__link{
+        font-size: 2rem;
     }
 }
